@@ -73,7 +73,7 @@ html, body {
     margin: 0;
     top: 10px;
     left: 35px;
-    border: 4.8px solid royalblue;
+    border: 4.8px solid #3366FF;
     border-right: none;
     border-left: none;
     z-index: 101;
@@ -140,6 +140,7 @@ h1 {
     left: 88px;
     border-top: solid lightgrey 3px;
     border-bottom: solid lightgrey 3px;
+    color: 
 }
 
 p {
