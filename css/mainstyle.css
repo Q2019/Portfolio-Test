@@ -1,39 +1,50 @@
 * {
-    box-sizing:border-box;
     margin: 0;
-    padding: 0;
     font-family: 'open sans', sans-serif;
-    color: white;
 }
 
-html, body{
+html, body {
     height: 100%;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    scrollbar-face-color: dimgrey;
+    scrollbar-base-color: lightgrey;
+    scrollbar-arrow-color: none;
 }
 
-#content-box {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: black;
-}
 
 .nav-ul {
-    position: absolute;
+    position: fixed;
+    z-index: 100;
+    background: rgba(0,0,0,0.8); 
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-ul-list, .nav-ul-list-footer {
     list-style: none;
-    top: 150px;
-}
-
-.nav-ul-list {
-    padding: 10px;
-    margin: 80px;
+    padding: 3px;
+    margin: 20px;
     text-transform: uppercase;
+    float: left;
+    font-size: 14px;
+    left: 1257px;
+    position:relative;
 }
 
-.nav-ul-list > a {
+.nav-ul-list > a, .nav-ul-list-footer {
     text-decoration: none;
     position: relative;
-    color: white;
+    color: lightgrey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: default;
+}
+
+.nav-ul-list > a:hover, .nav-ul-list-footer > a:hover {
+    color: royalblue;
 }
 
 .nav-ul-list > a:after {
@@ -51,5 +62,128 @@ html, body{
 }
 
 .nav-ul-list > a:hover:after {
-    width:100%;
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 0;
+    top: 10px;
+    left: 35px;
+    border: 4.8px solid lightgrey;
+    border-right: none;
+    border-left: none;
+    z-index: 101;
+    border-radius: 20%;
+}
+
+.logo > a {
+    border:  ;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: url(../img/2015-01-02-lightbulb-poster.jpg) no-repeat;
+    background-size: cover;
+    pointer-events: none;
+}
+
+.stopfade {
+    opacity: .5;
+}
+
+#about-me {
+    font-family: 'open sans', Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+    font-weight: 100;
+    background: rgba(0,0,0,0.8);
+    color: lightgrey ;
+    padding: 2rem;
+    width: 29%;
+    margin: 2rem;
+    float: right;
+    font-size: 1.2rem;
+    position: relative;
+    top: 81px;
+    cursor: default;
+    visibility: hidden;
+}
+
+.dogpic {
+    position:relative;
+    height: 180px;
+    width: 250px;
+    top: 30px;
+    left: 154px;
+    border: lightgrey 3px solid;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 0;
+    letter-spacing: .3rem;
+    width: 400px;
+    left: 88px;
+    border-top: solid lightgrey 3px;
+    border-bottom: solid lightgrey 3px;
+}
+
+p {
+    position: relative;
+    margin-top: 40px;
+    font-size: 16px;
+    width: 540px;
+    left: 20px;
+    max-height: 390px;
+    overflow:auto;
+    cursor: default;
+}
+
+::-webkit-scrollbar {
+    width: 7.6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+::-webkit-scrollbar-corner {
+    background-color: white;
+	}
+
+.nav-ul-footer {
+    position: fixed;
+    z-index: 100;
+    background: rgba(0,0,0,0.8); 
+    width: 100%;
+    padding: 0;
+    top: 913px;
+}
+
+.copyright {
+    left: 1546px;
+    font-size: 13px;
+}
+
+audio {
+    position: absolute;
+    top: 930px;
 }
