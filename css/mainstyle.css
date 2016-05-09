@@ -73,15 +73,11 @@ html, body {
     margin: 0;
     top: 10px;
     left: 35px;
-    border: 4.8px solid #3366FF;
+    border: double 8.8px #3366FF;
     border-right: none;
     border-left: none;
     z-index: 101;
     border-radius: 20%;
-}
-
-.logo > a {
-    border:  ;
 }
 
 video {
@@ -122,9 +118,9 @@ video {
 
 .dogpic {
     position:relative;
-    height: 180px;
-    width: 250px;
-    top: 30px;
+    height: 100%;
+    width: 44%;
+    top: 32px;
     left: 154px;
     border: lightgrey 3px solid;
 }
@@ -136,23 +132,45 @@ h1 {
     text-transform: uppercase;
     margin-top: 0;
     letter-spacing: .3rem;
-    width: 400px;
-    left: 88px;
+    width: 69%;
+    left: 16%;
     border-top: solid lightgrey 3px;
     border-bottom: solid lightgrey 3px;
-    color: 
 }
 
 p {
     position: relative;
-    margin-top: 40px;
-    font-size: 16px;
+    margin-top: 10%;
+    font-size: .99rem;
     width: 540px;
     left: 20px;
     max-height: 390px;
     overflow:auto;
     cursor: default;
 }
+
+.search {
+    position: relative;
+    height: 26px;
+    background-image: url(../img/icon-search.png) no-repeat;
+    background-size: contain;
+    bottom: 10px;
+}
+
+.search2 {
+    height: 26px;
+}
+
+.search-anchor {
+    display: block;
+    position: relative;
+    height: 7px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
 
 ::-webkit-scrollbar {
     width: 7.6px;
@@ -176,7 +194,7 @@ p {
     background: rgba(0,0,0,0.8); 
     width: 100%;
     padding: 0;
-    top: 913px;
+    top: 92%;
 }
 
 .copyright {
